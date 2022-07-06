@@ -83,48 +83,43 @@
             <table style="text-align: left; width: 100%;" border="0" cellpadding="8" cellspacing="4">
               <tbody>
                 <tr>
-                  <td style="vertical-align: top;"><big><span style="font-weight: bold;">Contest Problems<br>
+                  <td style="vertical-align: top;"><big><span style="font-weight: bold;">Contest Problems
                   </span></big>
-                  <table style="text-align: left; width: 95%; margin-left: auto; margin-right: 0px;" border="0" cellpadding="0" cellspacing="8" height="370">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top; width: 160px;">Target<br>
-                        </td>
-                        <td style="vertical-align: top;">
-									Life-threatening ventricular arrhythmias detection with high accuracy, low latency, low memory footprint and low power from intracardiac electrogram (IECG). </a>
-									
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top;">Background<br>
-                        </td>
-                        <td style="vertical-align: top;">
-						Ventricular Tachycardia (VT) and Ventricular Fibrillation (VF) are the two most frequent recorded shockable rhythms (i.e., life-threatening ventricular arrhythmias) causing Sudden Cardiac Death (SCD).<br><br>
-						The Implantable Cardioverter-Defibrillator (ICD) is a small battery-powered device to deliver defibrillation for patients experiencing life-threatening ventricular arrhythmias. <br><br>
-						<table style="text-align: left; width: 100%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
-						  <tbody>
-						    <tr>
-						      <td style="vertical-align: middle; width: 331px">
-											<img border="0" src="Figures/7.png" width="320" height="200"><br>
-						      </td>
-						      <td style="vertical-align: middle;">&nbsp; 
-											<a href="https://iccad.com/index.php">
-											<img border="0" src="Figures/8.png" width="300" height="300"></a><br><br>
-						      </td>
-						    </tr>
-						  </tbody>
-						</table>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top;">Motivation and Uniqueness<br>
-                        </td>
-                        <td style="vertical-align: top;">
-						Existing industry practice is simple rule based, and  has not changed over the past a few decades. <br><br>
-						Deep learning can potentially revolutionized ICD design by extracting features not easily identifiable by or even unknown to human experts. <br><br>
-						However, a critical challenge here is the extremely low power budget, memory footprint, low latency and high accuracy on extremely resource-constraint embedded platforms (flash memory <128K, power <1 uW, latency < 5ms, accuracy > 90%). <br><br>
-						While many machine learning competitions exist, they mostly focus on computer vision only and does not utilize hardware platforms to such an extreme limit (tinyML). <br><br>
-                      </tr>
-                    </tbody>
-                  </table>
+				    <tbody>
+				      <tr>
+				        <td style="vertical-align: top;">
+				          <table style="text-align: left;
+				            width: 100%;" cellspacing="2" cellpadding="2" border="0">
+				                <div class="elementor-widget-container">
+				                <div class="elementor-text-editor elementor-clearfix">
+								<p><b>1 Introduction</b></p>
+				                <p style="text-align: left"><span style="font-size: inherit;text-align: inherit;letter-spacing: -0.015em">Ventricular Tachycardia (VT) and Ventricular Fibrillation (VF) are the two most frequent recorded shockable rhythms (i.e., life-threatening ventricular arrhythmias) causing Sudden Cardiac Death (SCD) [1]. The design of Implantable Cardioverter-Defibrillator (ICD) is critical in the treatment of ventricular arrhythmia. Since it can deliver defibrillation for patients experiencing life-threatening ventricular arrhythmias. Meanwhile, deep learning can potentially revolutionized ICD design by extracting features not easily identifiable by or even unknown to human experts.  However, while many machine learning competitions exist, they mostly focus on computer vision only and does not utilize hardware platforms to such an extreme limit (tinyML).</span></p>
+				                <p>Therefore, the goal of this contest is to develop a tool to achieve extremely low power budget, memory footprint, low latency and high accuracy on extremely resource-constraint embedded platforms (flash memory < 128K, power consumption < 1 uW, latency < 5ms, accuracy > 90%). The following is a schematic diagram of recorded intracardiac electrogram (IECG) and ICD. That is, contestants are required to write a program to identify a given IECG and implement it on extremely resource-constraint embedded platforms.</p>
+									    <table style="text-align: left; width: 100%; margin-left:
+									                  auto; margin-right: auto;" border="0" cellspacing="0" cellpadding="0">
+									                  <tbody>
+									                    <tr>
+									                      <td style="vertical-align: middle; width: 331px">
+									    					<img border="0" src="Figures/7.png" width="300" height="200"><br>
+									                      </td>
+									                      <td style="vertical-align: middle;">&nbsp; 
+									    					<img border="0" src="Figures/8.png" width="300" height="300"><br>
+									                      </td>
+									                    </tr>
+									                  </tbody>
+									                </table>
+								<p><b>2 Problem Formulation and Input Output Format</b></p>
+								<p>This section defines the input, output, and the requirement of this contest.</p>
+				                <p>Given an IECG data set containing 2-15 minutes IEGM recordings over 95 subjects with 250 Hz sampling rate, 16-bit resolution and 15-55 Hz bandpass filter. Contestants need to realize the classification of these records on STM32 platform, and minimize the power consumption budget, memory footprint and latency on the premise of ensuring accuracy.</p>
+								<p>2.1 program requirement<br>The requested program must be run on a Linux system.The program should accept two arguments, “-input < input_path/name.v >” and “-output < output_path/name.v >”, for specifying the input and output files, respectively. </p>
+								<p>2.2 Input file format</p>
+								<p>2.3 Output file format</p>
+								
+				                <p><b>3 References</b></p>
+								<p>[1] Cleveland Clinic, Ventricular Fibrillation and Ventricular Tachycardia, [Online], 2022.</p>					</div>
+				                						</div>
+						      
+						    
                   <br>
                     </li>
                   </ul>
